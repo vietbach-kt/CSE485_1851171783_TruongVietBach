@@ -9,14 +9,15 @@ class HomepagesController extends Controller
     //
     public function home()
     {
-        return view('welcome');
+        return view('homepages/home');
     }
     public function about()
     {
-        return view('about');
+        return view('homepages/about');
     }
     public function contact()
     {
-        return view('contact');
+        return view('homepages/contact');
     }
+
 }
