@@ -1,3 +1,6 @@
+<?php
+require_once('./dbqlnv.php');
+?>
 <!doctype html>
 <html lang="en">
 
@@ -34,17 +37,16 @@
           <div class="modal-body">
             <form action="/action_page.php">
               <div class="form-group">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                <label for="email">Your name:</label>
+                <input type="text" class="form-control" placeholder="Enter name">
               </div>
               <div class="form-group">
-                <label for="pwd">Password:</label>
+                <label for="pwd">Gender:</label>
                 <input type="password" class="form-control" placeholder="Enter password" id="pwd">
               </div>
-              <div class="form-group form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox"> Remember me
-                </label>
+              <div class="form-group">
+                <label for="pwd">Birth:</label>
+                <input class="form-control" type="date" id="example-datetime-local-input">
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -55,25 +57,31 @@
     <table id="myTable" class="table table-hover">
       <thead>
         <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email</th>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Birth</th>
           <th>Action</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>john@example.com</td>
-          <td>
-            <a href="#">
-              <i class='fas fa-edit' style='color:black'></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-remove" style="color:red"></i>
-            </a>
-          </td>
+          <?php
+            $sql = 'select * from subject';
+            $subjectList = executeResult($sql);
+            foreach ($subjectList as $sbl) {
+              echo '
+              <tr>
+                <td>' . $sbl['id'] . '</td>
+                <td>' . $sbl['mamh'] . '</td>
+                <td>' . $sbl['name'] . '</td>
+                <td>' . $sbl['description'] . '</td>                            
+                <td>
+                    <button type="button" class="btn btn-warning">sửa</button>&nbsp;
+                    <button type="button" class="btn btn-danger" )">xóa</button>
+                </td>
+              </tr>';
+              }
+          ?>
         </tr>
       </tbody>
     </table>

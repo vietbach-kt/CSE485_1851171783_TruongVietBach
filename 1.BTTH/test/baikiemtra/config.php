@@ -2,5 +2,6 @@
     define('host','localhost');
     define('username', 'root');
     define('password', '');
-    define('database', 'qlnv');
+    define('database', 'qlmonhoc');
+
 ?>
