@@ -4,6 +4,11 @@
 
 // Variables
 @import "variables";
+@import "homepages";
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+.carousel-item img{
+    height: 7em;
+    width: auto;
+}
