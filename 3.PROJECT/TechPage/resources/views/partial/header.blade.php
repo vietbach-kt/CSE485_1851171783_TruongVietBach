@@ -42,7 +42,7 @@
               <a class="nav-link" href="#">Bộ môn-trung tâm</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sinh viên</a>
+              <a class="nav-link" href="#">Diễn đàn</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Tin tức</a>
