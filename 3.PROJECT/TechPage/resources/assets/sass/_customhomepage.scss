@@ -1,0 +1,73 @@
+.topHeader {
+    ul li a{
+      color: black;
+      font-size: 12px;
+    }
+
+    ul li a:hover {
+      color: blue;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    p:hover {
+      color: blue;
+    }
+  }
+
+  .footHeader {
+    ul li a {
+      color: black;
+      font-size: 15px;
+    }
+
+    ul li a:hover {
+      color: blue;
+    }
+  }
+
+  .fixed-top {
+    background-color: white;
+  }
+
+  .listStatistical {
+    margin-top: 2em;
+  }
+
+  .member {
+    background-color: #8080804f;
+    height: 14em;
+    max-height: 15em;
+  }
+
+  .event {
+    background-color: #8080804f;
+    height: 14em;
+    max-height: 15em;
+  }
+
+  .document {
+    background-color: #8080804f;
+    height: 14em;
+    max-height: 15em;
+  }
+
+  .listEvent {
+    margin-top: 2em;
+  }
+
+  .sideBarRight {
+    border: 1px gray solid;
+    height: 40em;
+  }
+
+  .sideBarLeft {
+    border: 1px gray solid;
+    height: 40em;
+  }
+
+  #forumPageBackground {
+    background-color: #f3f3f3
+  }
