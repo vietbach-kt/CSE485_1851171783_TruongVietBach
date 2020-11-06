@@ -21,17 +21,22 @@
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h4 class="modal-title">Modal Heading</h4>
+                        <h4 class="modal-title">Create Post</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
                       <!-- Modal body -->
                       <div class="modal-body">
-                        Modal body..
+                        <form action="/action_page.php">
+                          <div class="form-group">
+                            <label for="uname">Content</label>
+                            <input type="text" class="form-control" id="uname" placeholder="What do you mind,... ?" name="uname" required>
+                          </div>
                       </div>
                       <!-- Modal footer -->
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                       </div>
+                      </form>
                     </div>
                   </div>
                 </div>

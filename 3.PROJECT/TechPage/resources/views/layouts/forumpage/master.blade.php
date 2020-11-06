@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{!! asset('sass/customhomepage.scss') !!}">
 </head>
 <style>
-      .container{
+  .container{
     max-width: 980px !important;
   }
   .GroupInlineComposer{
@@ -57,11 +57,13 @@
   .marginForpage{
     margin: 5px 5px;
   }
+  .input-group-text{
+  background-color: white !important;
+}
 </style>
 </head>
 
 <body>
-
     @include('partial.forumpage.header')
     @yield('content')
 </body>

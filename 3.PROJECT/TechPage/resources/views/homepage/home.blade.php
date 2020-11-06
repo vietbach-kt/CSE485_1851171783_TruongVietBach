@@ -34,21 +34,21 @@
       <div class="col-md-4 col-sm-4">
         <div clas="statisticalItem">
           <div class="member">
-            <h2>1000<span>+</span></h2>
+            <h2 class="counter">1000</h2>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-4">
         <div clas="statisticalItem">
           <div class="event">
-            <h2>1000<span>+</span></h2>
+            <h2 class="counter">1000</h2>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-4">
         <div clas="statisticalItem">
           <div class="document">
-            <h2>1000<span>+</span></h2>
+            <h2 class="counter">1000</h2>
           </div>
         </div>
       </div>

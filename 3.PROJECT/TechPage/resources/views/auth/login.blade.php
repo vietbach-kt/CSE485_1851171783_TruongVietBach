@@ -1,11 +1,11 @@
-@extends('master')
+@extends('layouts.master')
 @section('name', 'Login')
 @section('content')
 <div class="container col-md-6 col-md-offset-3">
   <div class="well well bs-component">
     <form class="form-horizontal" method="post">
       @foreach ($errors->all() as $error)
-      <p class="alert alert-danger">{{ $error }}</p>
+        <p class="alert alert-danger">{{ $error }}</p>
       @endforeach
       {!! csrf_field() !!}
       <fieldset>
@@ -13,15 +13,13 @@
         <div class="form-group">
           <label for="email" class="col-lg-2 control-label">Email</label>
           <div class="col-lg-10">
-            <input type="email" class="form-control" id="email" name="
-email" value="{{ old('email') }}">
+            <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}">
           </div>
         </div>
         <div class="form-group">
-          <label for="password" class="col-lg-2 control-label">Password</ label>
+          <label for="password" class="col-lg-2 control-label">Password</label>
             <div class="col-lg-10">
-              <input type="password" class="form-control" name="password
-">
+              <input type="password" class="form-control" name="password">
             </div>
         </div>
         <div class="checkbox">
@@ -38,3 +36,4 @@ email" value="{{ old('email') }}">
     </form>
   </div>
 </div>
+@endsection

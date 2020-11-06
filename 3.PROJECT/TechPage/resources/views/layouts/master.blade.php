@@ -15,10 +15,67 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="{!! asset('sass/customhomepage.scss') !!}" >
 </head>
 <style>
-  
+  .topHeader {
+  ul li a {
+  color: black;
+  font-size: 12px;
+  }
+  ul li a:hover{
+    color: blue;
+  } 
+  p{
+      font-size: 12px;  
+  }
+  p:hover{
+    color: blue;
+  }
+}
+.footHeader{
+  ul li a {
+    color: black;
+    font-size: 15px;
+    }
+  ul li a:hover{
+    color: blue;
+  }
+}
+.fixed-top{
+  background-color: white;
+}
+.listStatistical{
+  margin-top: 2em;
+}
+.member{
+  background-color: #8080804f;
+  height: 14em;
+  max-height: 15em;
+}
+.event{
+  background-color: #8080804f;
+  height: 14em;
+  max-height: 15em;
+}
+.document{
+  background-color: #8080804f;
+  height: 14em;
+  max-height: 15em;
+}
+.listEvent{
+  margin-top: 2em;
+}
+.sideBarRight{
+  border: 1px gray solid;
+  height: 40em;
+}
+.sideBarLeft{
+  border: 1px gray solid;
+  height: 40em;
+}
+#forumPageBackground{
+  background-color: #f3f3f3
+}
 </style>
 </head>
 
