@@ -14,10 +14,10 @@
             </div>
             <div class="col-md-9">
               <div class="postComment">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                  Create Micropost
+                <button type="button" class="btn" data-toggle="modal" data-target="#createMicropost" style="width:24em">
+                  What's on you mind?
                 </button>
-                <div class="modal fade" id="myModal">
+                <div class="modal fade" id="createMicropost">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -29,12 +29,25 @@
                         <form action="/action_page.php">
                           <div class="form-group">
                             <label for="uname">Content</label>
-                            <input type="text" class="form-control" id="uname" placeholder="What do you mind,... ?" name="uname" required>
+                            <input type="text" class="form-control" id="uname" placeholder="Write something..." name="uname" required>
+                          </div>
+                          <div class="row uploadFile" style="width: 100%;">
+                            <div class="col-md-6">
+                              <h6>Add to your photo</h6>
+                            </div>
+                            <div class="col-md-6">
+                              <ul class="listChosse">
+                                <li><a href="#"><i class="fas fa-video"></i></a></li>
+                                <li><a href="#"><i class="fas fa-images"></i></a></li>
+                                <li><a href="#"><i class="fas fa-user-friends"></i></a></li>
+                              </ul>
+                            </div>
                           </div>
                       </div>
                       <!-- Modal footer -->
                       <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="submit" class="btn btn-primary" style="width: 100%;">Post</button>
+                        <!-- commetn -->
                       </div>
                       </form>
                     </div>
