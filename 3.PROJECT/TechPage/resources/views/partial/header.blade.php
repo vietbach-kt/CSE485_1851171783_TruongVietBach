@@ -5,10 +5,10 @@
         <ul class="nav justify-content-center">
           @if (Auth::check())
             <li class="nav-item">
-              <a class="nav-link" href="users/register">Đăng xuất</a>
+              <a class="nav-link" href="users/register" >Đăng xuất</a>
             </li>
           @else
-            <li class="nav-item"><a class="nav-link" href="/users/register">Register</a></li>
+            <li class="nav-item"><a class="nav-link" href="users/register">Register</a></li>
             <li class="nav-item"><a class="nav-link" href="/users/login">Login</a></li>
           @endif
           <li class="nav-item">
