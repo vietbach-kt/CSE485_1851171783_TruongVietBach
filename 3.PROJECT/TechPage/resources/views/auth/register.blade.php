@@ -24,15 +24,28 @@
         </div>
         <div class="form-group">
           <label for="password" class="col-lg-2 control-label">Password</label>
-            <div class="col-lg-10">
-              <input type="password" class="form-control" name="password">
-            </div>
+          <div class="col-lg-10">
+            <input type="password" class="form-control" name="password">
+          </div>
         </div>
         <div class="form-group">
           <label for="password" class="col-lg-2 control-label">Confirm password</label>
           <div class="col-lg-10">
             <input type="password" class="form-control" name="password_confirmation">
           </div>
+        </div>
+        <div class="form-group">
+          <label for="name" class="col-lg-2 control-label">Phone Number</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="name" placehol der="Name" name="phonenumber" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="example-date-input" class="col-2 col-form-label">Date</label>
+          <div class="col-10">
+            <input class="form-control" type="date"  name="birth" id="example-date-input">
+          </div>
+        </div>
         </div>
         <div class="form-group">
           <div class="col-lg-10 col-lg-offset-2">

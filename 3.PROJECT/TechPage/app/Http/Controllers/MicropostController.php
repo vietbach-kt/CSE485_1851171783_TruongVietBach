@@ -47,7 +47,10 @@ class MicropostController extends Controller
         $micropost = new Micropost();
         $micropost -> content = $request -> content;
         $micropost -> user_id = $user_id;
-        $micropost -> save();
+        if($micropost -> save()){
+            return redirect()->route('forum');
+        }
+        
     }
 
     /**
