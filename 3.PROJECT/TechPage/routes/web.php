@@ -19,5 +19,5 @@ Route::get('users/logout', 'Auth\LoginController@logout')->name('userLogout');
 Route::get('users/login', 'Auth\LoginController@showLoginForm')->name('userLogin');
 Route::post('users/login', 'Auth\LoginController@login');
 Route::post('users/create_micropost', 'MicropostController@store')->name('createMicropost');
-Route::get('admin/', 'Auth\LoginController@showLoginForm')->name('userLogin');
+Route::get('admin/manager', 'Admin\BaseController@home');
 
