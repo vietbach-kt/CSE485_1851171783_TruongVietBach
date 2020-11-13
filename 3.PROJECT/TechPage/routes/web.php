@@ -19,5 +19,11 @@ Route::get('users/logout', 'Auth\LoginController@logout')->name('userLogout');
 Route::get('users/login', 'Auth\LoginController@showLoginForm')->name('userLogin');
 Route::post('users/login', 'Auth\LoginController@login');
 Route::post('users/create_micropost', 'MicropostController@store')->name('createMicropost');
-Route::get('admin/manager', 'Admin\BaseController@home');
+Route::get('admin/manager', 'Admin\BaseController@home')->name('adminPage');
+Route::post('users/create_event', 'Admin\EventController@store')->name('createEvent');
 
+
+Route::get('event/edit/{id}', 'Admin\EventController@edit')->name('editEvent');
+Route::post('event/edit/{id}', 'Admin\EventController@update')->name('updateEvent');
+
+Route::get('forum/event', 'EventController@index')->name('listEvent');

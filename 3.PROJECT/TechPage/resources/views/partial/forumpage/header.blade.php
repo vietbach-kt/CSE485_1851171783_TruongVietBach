@@ -29,7 +29,7 @@
                 <a class="nav-link" href="#">Members</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Events</a>
+                <a class="nav-link" href="{{ route('listEvent') }}">Events</a>
               </li>
             </ul>
 
