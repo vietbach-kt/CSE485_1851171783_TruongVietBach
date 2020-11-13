@@ -3,9 +3,10 @@
     <div class="col-md-12 col-xs-12">
       <div class="topHeader">
         <ul class="nav justify-content-center">
+
           @if (Auth::check())
             <li class="nav-item">
-              <a class="nav-link" href="users/register" >Đăng xuất</a>
+              <a class="nav-link" href="users/logout">Đăng xuất</a>
             </li>
           @else
             <li class="nav-item"><a class="nav-link" href="users/register">Register</a></li>
@@ -47,7 +48,7 @@
               <a class="nav-link" href="#">Nghiên cứu khoa học</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="wru/forum">Diễn đàn</a>
+              <a class="nav-link" href="{{ route('forum') }}">Diễn đàn</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Tin tức</a>

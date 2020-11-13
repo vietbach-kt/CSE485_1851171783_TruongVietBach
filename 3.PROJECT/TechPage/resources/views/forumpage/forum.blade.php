@@ -25,11 +25,12 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
                       <!-- Modal body -->
+                    <form action="{!! Route('createMicropost') !!}" method="post">
+                      {!! csrf_field() !!}
                       <div class="modal-body">
-                        <form action="/action_page.php">
                           <div class="form-group">
                             <label for="uname">Content</label>
-                            <input type="text" class="form-control" id="uname" placeholder="Write something..." name="uname" required>
+                            <input type="text" class="form-control" id="uname" placeholder="Write something..." name="content" required>
                           </div>
                           <div class="row uploadFile" style="width: 100%;">
                             <div class="col-md-6">
@@ -63,24 +64,66 @@
           </div>
         </div>
         <div class="listItemContent">
-          <div class="itemContent publicBackground">
-            <div class="contentMicropostOrEvent">
-              <div class="contentDetail">
-                <div class="textContent">
-                  <div class="informationContent">
-                    <i class='fas fa-user-edit'></i>
-                    <b>ĐÂS ÁDASDASD</b>
+          @foreach($microposts as $micropost)
+            <div class="itemContent publicBackground">
+              <div class="contentMicropostOrEvent">
+                <div class="contentDetail">
+                  <div class="textContent">
+                    <div class="informationContent">
+                      <i class='fas fa-user-edit'></i>
+                      <b>{{$micropost->user->name}}</b>
+                    </div>
+                    <span>{{$micropost->content}}</span>
                   </div>
-                  <span>dsdadddddddd</span>
+                  <div class="listImage">
+                  </div>
                 </div>
-                <div class="listImage">
-
+                <div class="liveLikeAndQuantity">
                 </div>
               </div>
               <div class="liveLikeAndQuantity">
+                <div class="quantityLikeComment">
+                  <div class="row">
+                    <div class="col-md-5">
+                      5 Like
+                    </div>
+                    <div class="col-md-7">
+                      10 Comments
+                    </div>
+                  </div>
+                </div>
+                <div class="functionCommentLike">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <i class="far fa-thumbs-up"></i>Like
+                    </div>
+                    <div class="col-md-6">
+                      <i class="far fa-comment-alt"></i>Comment
+                    </div>
+                  </div>
+                </div>
+                <form action="{!! Route('createMicropost') !!}" method="post">
+                  <div class="postComment">
+                    <div class="form-group" style="margin-top: 5px;">
+                      <div class="row">
+                        <div class="col-md-10">
+                        <input type="text" class="form-control" id="uname" placeholder="Write something..." name="content" required>
+                          <!-- <%= f.hidden_field :user_id, :value => current_user.id %> -->
+                        </div>
+                        <div class="col-md-2">
+                          <button type="submit" class="btn btn-primary" style="width: 100%;">Post</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="listComment">
+                  <div class="listItem">
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          @endforeach
         </div>
       </div>
     </div>
